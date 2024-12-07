@@ -1,28 +1,28 @@
-name = "pastebin-worker"
-compatibility_date = "2023-10-30"
+name = "cloudflare-share"
+compatibility_date = "2024-12-07"
 compatibility_flags = ["nodejs_compat"]
 
-account_id = "516d0a360ccdea88dd79e9cf5d2bc3aa"
+account_id = "1bbdd525198a721c33167bbe86fba8ed"
 main = "src/index.ts"
 workers_dev = false
 
 [vars]
 ENVIRONMENT = "production"
-BASE_URL = "https://as.al"
+BASE_URL = "https://share.mouren.eu.org"
 
 [site]
 bucket = "./static/dist"
 
 # 如果不使用自定义域名，将下面的代码注释掉
 [[routes]]
-pattern = "as.al"
+pattern = "share.mouren.eu.org"
 custom_domain = true
 
 [[r2_buckets]]
 binding = 'BUCKET'
-bucket_name = 'pastes'
+bucket_name = 'share'
 
 [[d1_databases]]
 binding = "DB"
-database_name = "pastebins"
-database_id = "e7d77803-c383-45c8-9481-c1630aa43bca"
+database_name = "share"
+database_id = "d0fc14a1-df6b-4200-98ae-68ddf8db3ef5"
