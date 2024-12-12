@@ -18,9 +18,9 @@ bucket = "./static/dist"
 pattern = "share.mouren.eu.org"
 custom_domain = true
 
-[[r2_buckets]]
-binding = 'BUCKET'
-bucket_name = 'share'
+#[[r2_buckets]]
+#binding = 'BUCKET'
+#bucket_name = 'share'
 
 [[d1_databases]]
 binding = "DB"
