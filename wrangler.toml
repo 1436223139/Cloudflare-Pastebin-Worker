@@ -8,14 +8,14 @@ workers_dev = false
 
 [vars]
 ENVIRONMENT = "production"
-BASE_URL = "https://share.mouren.eu.org"
+BASE_URL = "https://share-test.mouren.eu.org"
 
 [site]
 bucket = "./static/dist"
 
 # 如果不使用自定义域名，将下面的代码注释掉
 [[routes]]
-pattern = "share.mouren.eu.org"
+pattern = "share-test.mouren.eu.org"
 custom_domain = true
 
 #[[r2_buckets]]
